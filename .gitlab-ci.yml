@@ -1,0 +1,52 @@
+stages:
+  - test
+variables:
+  GIT_STRATEGY: clone
+
+check-upgradeable:
+  stage: test
+  image: node:16
+  tags:
+    - saas-linux-large-amd64
+  only:
+    - merge_requests
+  script:
+    - npm install
+    - npm run check-mark-upgrade
+    - npm run check-storage
+
+check-prettier:
+  stage: test
+  image: node:16
+  tags:
+    - saas-linux-large-amd64
+  only:
+    - merge_requests
+  script:
+    - npm install
+    - npm run check-format
+
+check-solhint:
+  stage: test
+  image: node:16
+  tags:
+    - saas-linux-large-amd64
+  only:
+    - merge_requests
+  script:
+    - npm install
+    - npm run check-solhint
+
+check-unittest:
+  stage: test
+  image: node:16
+  tags:
+    - saas-linux-large-amd64
+  only:
+    refs:
+      - merge_requests
+    variables:
+      - $CI_MERGE_REQUEST_TARGET_BRANCH_NAME != "develop"
+  script:
+    - npm install
+    - npx hardhat test

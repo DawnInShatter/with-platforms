@@ -1,0 +1,20 @@
+// SPDX-License-Identifier: MIT
+pragma solidity 0.8.19;
+
+//import {IWantToEth} from "../interfaces/IWantToEth.sol";
+
+contract MockWantToEthOracle {
+    uint256 public toEthRate = 1e12 / 2000; // 1 usdt(10**6) * 2000 * = 1 eth(10**18)
+
+    function setToEthRate(uint256 rate) external {
+        toEthRate = rate;
+    }
+
+    function wantToEth(uint256 input) external view returns (uint256) {
+        return input * toEthRate;
+    }
+
+    function ethToWant(uint256 input) external view returns (uint256) {
+        return input / toEthRate;
+    }
+}

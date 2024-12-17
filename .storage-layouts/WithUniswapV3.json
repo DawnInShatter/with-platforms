@@ -1,0 +1,58 @@
+{
+  "storage": [
+    {
+      "astId": 6,
+      "contract": "contracts/uniswap/WithUniswapV3.sol:WithUniswapV3",
+      "label": "_initialized",
+      "offset": 0,
+      "slot": "0",
+      "type": "t_uint8"
+    },
+    {
+      "astId": 9,
+      "contract": "contracts/uniswap/WithUniswapV3.sol:WithUniswapV3",
+      "label": "_initializing",
+      "offset": 1,
+      "slot": "0",
+      "type": "t_bool"
+    },
+    {
+      "astId": 4014,
+      "contract": "contracts/uniswap/WithUniswapV3.sol:WithUniswapV3",
+      "label": "UNISWAPV3_ROUTER",
+      "offset": 2,
+      "slot": "0",
+      "type": "t_address"
+    },
+    {
+      "astId": 4017,
+      "contract": "contracts/uniswap/WithUniswapV3.sol:WithUniswapV3",
+      "label": "UNISWAP_FACTORY",
+      "offset": 0,
+      "slot": "1",
+      "type": "t_contract(IUniswapV3Factory)1434"
+    }
+  ],
+  "types": {
+    "t_address": {
+      "encoding": "inplace",
+      "label": "address",
+      "numberOfBytes": "20"
+    },
+    "t_bool": {
+      "encoding": "inplace",
+      "label": "bool",
+      "numberOfBytes": "1"
+    },
+    "t_contract(IUniswapV3Factory)1434": {
+      "encoding": "inplace",
+      "label": "contract IUniswapV3Factory",
+      "numberOfBytes": "20"
+    },
+    "t_uint8": {
+      "encoding": "inplace",
+      "label": "uint8",
+      "numberOfBytes": "1"
+    }
+  }
+}

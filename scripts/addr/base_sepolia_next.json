@@ -1,0 +1,23 @@
+{
+    "XCProxyAdmin": {
+        "address": "0x877be51b3B0446A58Ff1E302fF3333854945313b",
+        "block": "13880632",
+        "meta": {
+            "contract": "XCProxyAdmin",
+            "path": "contract_abi/XCProxyAdmin.json"
+        },
+        "legacyAddresses": []
+    },
+    "WithUniswapV3": {
+        "address": "0x89bf50Da2Da709478da60CE3ad8D279486566D2A",
+        "block": "13880661",
+        "proxy": "0x89bf50Da2Da709478da60CE3ad8D279486566D2A",
+        "implementation": "0x9fB848B59B1ceA6B80E1350D15956126fC37706F",
+        "proxyAdmin": "0x877be51b3B0446A58Ff1E302fF3333854945313b",
+        "meta": {
+            "contract": "WithUniswapV3",
+            "path": "contract_abi/WithUniswapV3.json"
+        },
+        "legacyAddresses": []
+    }
+}

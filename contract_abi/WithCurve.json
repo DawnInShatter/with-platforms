@@ -1,0 +1,83 @@
+[
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint8",
+        "name": "version",
+        "type": "uint8"
+      }
+    ],
+    "name": "Initialized",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address[]",
+        "name": "pools_",
+        "type": "address[]"
+      },
+      {
+        "internalType": "int128[2][]",
+        "name": "idRouterList_",
+        "type": "int128[2][]"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount_",
+        "type": "uint256"
+      }
+    ],
+    "name": "getAmountsOut",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address[]",
+        "name": "pools_",
+        "type": "address[]"
+      },
+      {
+        "internalType": "address[]",
+        "name": "tokenRouterList_",
+        "type": "address[]"
+      },
+      {
+        "internalType": "int128[2][]",
+        "name": "idRouterList_",
+        "type": "int128[2][]"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount_",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amountMin_",
+        "type": "uint256"
+      }
+    ],
+    "name": "stablePoolsSwapWithoutETH",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "inputs": [],
+    "name": "InvalidSqrtPrice",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidTick",
+    "type": "error"
+  }
+]

@@ -1,0 +1,63 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "amountIn",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "outputToken",
+        "type": "address"
+      }
+    ],
+    "name": "ErrorReceivedNothing",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "amountOut",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amountMin",
+        "type": "uint256"
+      }
+    ],
+    "name": "ErrorSlippage",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address[]",
+        "name": "pools_",
+        "type": "address[]"
+      },
+      {
+        "internalType": "int128[2][]",
+        "name": "idRouterList_",
+        "type": "int128[2][]"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount_",
+        "type": "uint256"
+      }
+    ],
+    "name": "getAmountsOut",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]
